@@ -25,10 +25,10 @@ const Navbar = () => {
       {icons.map(({ id, text, active, hr }) => {
         const IconComponent = iconComponents[id];
         return (
-          <React.Fragment key={id}>
+          <div key={id}>
             <div
               className={`${
-                active ? "cursor-pointer" : "cursor-crosshair"
+                active ? "cursor-pointer" : "cursor-not-allowed"
               } flex gap-1 md:gap-5 justify-center items-center`}
             >
               {IconComponent && (
@@ -43,7 +43,7 @@ const Navbar = () => {
                 }`}
               />
             )}
-          </React.Fragment>
+          </div>
         );
       })}
     </section>
