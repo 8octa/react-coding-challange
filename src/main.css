@@ -1,0 +1,33 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-display: var(--font-display);
+  src: url("/public/Inter_24pt-Regular.ttf") format("ttf");
+}
+
+@utility container {
+  margin-inline: auto;
+}
+
+@theme {
+  --font-display: "Inter", "sans-serif";
+
+  --color-black: #121212;
+  --color-dark-gray: #1c1c1c;
+  --colo-gray: #2a2a2a;
+  --color-light-gray: #3a3a3a;
+  --color-blue-500: #002da1;
+  --color-dark-blue: #0037c1;
+  --color-yellow: #eab308;
+}
+
+@utility container {
+  margin: 0, auto;
+}
+
+body {
+  @apply font-display bg-black text-white;
+}
