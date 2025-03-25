@@ -25,7 +25,7 @@ const Navbar = () => {
       {icons.map(({ id, text, active, hr }) => {
         const IconComponent = iconComponents[id];
         return (
-          <div key={id}>
+          <React.Fragment key={id}>
             <div
               className={`${
                 active ? "cursor-pointer" : "cursor-not-allowed"
@@ -43,7 +43,7 @@ const Navbar = () => {
                 }`}
               />
             )}
-          </div>
+          </React.Fragment>
         );
       })}
     </section>
