@@ -8,7 +8,6 @@ function App() {
   const [theme, setTheme] = useState(false);
   const handleTheme = () => {
     setTheme((prev) => !prev);
-    console.log(theme);
   };
 
   useEffect(() => {
