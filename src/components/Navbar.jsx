@@ -21,7 +21,7 @@ const iconComponents = {
 
 const Navbar = () => {
   return (
-    <section className="w-full flex gap-5 justify-around items-center text-xs xl:text-sm">
+    <nav className="flex gap-5 justify-between items-center text-xs xl:text-sm">
       {icons.map(({ id, text, active, hr }) => {
         const IconComponent = iconComponents[id];
         return (
@@ -32,21 +32,21 @@ const Navbar = () => {
               } flex gap-1 md:gap-5 justify-center items-center`}
             >
               {IconComponent && (
-                <IconComponent className={`${active && "text-blue-700"} `} />
+                <IconComponent className={`${active && "text-blue"} `} />
               )}
               <p className="max-lg:hidden">{text}</p>
             </div>
             {hr && (
               <hr
                 className={`h-px w-[1rem] md:w-[2rem] border-0 ${
-                  active ? "bg-blue-700" : "bg-gray-700"
+                  active ? "bg-blue" : "bg-gray-700"
                 }`}
               />
             )}
           </React.Fragment>
         );
       })}
-    </section>
+    </nav>
   );
 };
 

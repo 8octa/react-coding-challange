@@ -17,11 +17,27 @@
 
   --color-black: #121212;
   --color-dark-gray: #1c1c1c;
-  --colo-gray: #2a2a2a;
+  --color-gray: #2a2a2a;
   --color-light-gray: #3a3a3a;
+  --color-lighter-gray: #5a5a5a;
   --color-blue-500: #002da1;
-  --color-dark-blue: #0037c1;
+  --color-blue: #0037c1;
+  --color-dark-blue: #000432;
   --color-yellow: #eab308;
+}
+
+.light {
+  --color-white: #000;
+  --color-black: #ffdead;
+  --color-dark-gray: #e9dcc9;
+  --color-gray: #fffdd0;
+  --color-light-gray: #edeade;
+  --color-lighter-gray: #faf9f6;
+  --color-blue-500: #ff5733;
+  --color-blue: red;
+  --color-dark-blue: #ff3342;
+
+  --color-yellow: #000;
 }
 
 @utility container {
