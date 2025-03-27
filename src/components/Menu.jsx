@@ -4,12 +4,12 @@ import { FaArrowRight } from "react-icons/fa";
 
 const Menu = ({ selectedCard, setSelectedCard }) => {
   return (
-    <section className="fixed bottom-0 left-0 w-full bg-gray p-5 border border-light-gray">
+    <section className="fixed z-100 bottom-0 left-0 w-full bg-gray p-5 border border-light-gray">
       <div className="container flex justify-between items-center">
         {info.map(({ id, size, price, hire_period_days }) => {
           return (
             selectedCard === id && (
-              <div className="flex gap-5">
+              <div className="flex flex-col md:fkex-row gap-5">
                 <p className="text-white">
                   <span className="text-2xl font-bold text-blue">
                     &#163; {price}
@@ -24,7 +24,7 @@ const Menu = ({ selectedCard, setSelectedCard }) => {
           );
         })}
 
-        <div className="flex gap-5">
+        <div className="flex flex-col md:fkex-row gap-5">
           <Button
             onClick={() => setSelectedCard(null)}
             children={"Back"}

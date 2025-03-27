@@ -19,10 +19,10 @@ function App() {
   }, [theme]);
 
   return (
-    <main className="relative container flex flex-col justify-center items-center p-10">
+    <main className="container flex flex-col justify-center items-center p-5 md:p-10">
       <div
         onClick={() => handleTheme()}
-        className="absolute top-0 left-0 p-2 cursor-pointer text-xl"
+        className="fixed top-0 left-0 p-5 cursor-pointer text-sm sm:text-xl"
       >
         {theme ? <FaMoon /> : <FaSun />}
       </div>

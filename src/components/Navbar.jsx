@@ -21,7 +21,7 @@ const iconComponents = {
 
 const Navbar = () => {
   return (
-    <nav className="flex gap-5 justify-between items-center text-xs xl:text-sm">
+    <nav className="flex flex-col sm:flex-row gap-5 p-5 justify-between items-center text-xs xl:text-sm select-none">
       {icons.map(({ id, text, active, hr }) => {
         const IconComponent = iconComponents[id];
         return (
